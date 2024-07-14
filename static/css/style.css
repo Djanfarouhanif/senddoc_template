@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(242, 242, 248, 0.915);
+}
+
+/*-------------------------------------Header--------------------------*/
+
+.header{
+    height: 300px;
+    margin-top: 90px;
+}
+
+.header_p{
+    text-align: center;
+    font-size: 40px;
+    background: rgba(229, 221, 221, 0.164);
+    
+    margin: 20px;
+    
+    span{
+        color: rgb(7, 7, 161);
+    }
+}
+/*____________________________________Fin Header__________________________________________*/
+
+
+
+
+/*--------------------------------------Plaine-------------------------------------------------*/
+
+.plaine{
+    margin: 20px;
+    box-shadow: 0px 0px 2px blue;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-column-end: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.plaine-image{
+    
+    
+    img{
+        width: 100%;
+        border-radius: 20px;
+
+    }
+}
+
+.text{
+    margin-top: 100px;
+    margin-left: 20px;
+    span{
+        color: brown;
+    }
+    p{
+        color: rgb(14, 14, 229);
+    }
+}
+
+/*________________________________________Fin Plaine_______________________________________*/
+
+/*-----------------------------------------Content----------------------------------------*/
+.content{
+    border: 1px solid turquoise;
+}
+
+/*___________________________________________Fin Content________________________________________*/
