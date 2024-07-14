@@ -11,7 +11,7 @@ body{
 /*-------------------------------------Header--------------------------*/
 
 .header{
-    height: 300px;
+    height: 250px;
     margin-top: 90px;
 }
 
@@ -35,12 +35,11 @@ body{
 
 .plaine{
     margin: 20px;
-    box-shadow: 0px 0px 2px blue;
     display: grid;
     grid-template-columns: auto 500px;
     grid-column-end: auto;
     border-radius: 20px;
-    overflow: hidden;
+   
     
 }
 .plaine-image{
@@ -55,7 +54,11 @@ body{
 
 .text{
     margin-top: 100px;
-    margin-left: 20px;
+    margin: 20px;
+    height: 200px;
+    box-shadow: 0 0 2px ;
+    border-radius: 10px;
+    padding: 15px;
     span{
         color: brown;
     }
@@ -63,7 +66,12 @@ body{
         color: rgb(14, 14, 229);
     }
 }
-
+@media screen and (max-width:600px) {
+    .plaine{
+        grid-template-columns: auto;
+    }
+    
+}
 /*________________________________________Fin Plaine_______________________________________*/
 /*----------------------------------------Search-------------------------------*/
 .search{
@@ -121,7 +129,9 @@ button{
 
 }
 
-
+table{
+    overflow: scroll;
+}
 caption{
     margin: 20px;
     font-weight: bold;
