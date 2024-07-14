@@ -65,7 +65,53 @@ body{
 }
 
 /*________________________________________Fin Plaine_______________________________________*/
+/*----------------------------------------Search-------------------------------*/
+.search{
+    margin: 90px 20px 90px 20px;
+}
+form{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px;
+    
+}
+.faculter, .departement{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 20px;
+    select{
+        margin: 10px;
+        outline: none;
+        border: none;
+        padding: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    label{
+        color: blue;
+        font-weight: bold;
+    }
+    option{
+        border: none;
+        outline: none;
+        list-style: none;
+        text-decoration: none;
+        color: blue;
+        
+    }
+}
+button{
+    width: 150px;
+    border:1px solid blue;
+    border-radius: 15px;
+    padding: 15px;
+    background: linear-gradient(45deg, blue, red, green);
+    font-weight: bold;
+    
 
+}
+
+/*_________________________________________Fin Search___________________________*/
 /*-----------------------------------------Content----------------------------------------*/
 .content{
     
@@ -75,13 +121,13 @@ body{
 
 }
 
-table{
-    border-collapse: collapse;
-    
-}
+
 caption{
     margin: 20px;
     font-weight: bold;
+    box-shadow: 0 0 3px ;
+    padding: 5px;
+    border-radius: 10px;
 
     span{
         color: blue;
@@ -90,6 +136,7 @@ caption{
 thead{
     td{
         font-weight: bold;
+       
     }
 }
 td{
@@ -97,6 +144,7 @@ td{
     padding: 15px;
     box-shadow: 0 0 2px;
     border-radius: 10px;
+   
     
     a{
         text-decoration: none;
