@@ -23,7 +23,7 @@ body{
     margin: 20px;
     
     span{
-        color: rgb(7, 7, 161);
+        color: #332FD0;
     }
 }
 /*____________________________________Fin Header__________________________________________*/
@@ -98,7 +98,7 @@ form{
        
     }
     label{
-        color: blue;
+        color: #332FD0;
         font-weight: bold;
     }
     option{
@@ -106,7 +106,9 @@ form{
         outline: none;
         list-style: none;
         text-decoration: none;
-        color: blue;
+        color: #332FD0;
+        margin-top: 10px;
+        border-radius: 15px;
         
         
     }
@@ -115,10 +117,10 @@ form{
 
 button{
     width: 150px;
-    border:1px solid blue;
+    border:1px solid #332FD0;
     border-radius: 15px;
     padding: 15px;
-    background: linear-gradient(45deg, blue, red, green);
+    background: linear-gradient(45deg, #332FD0, red, green);
     font-weight: bold;
     
 
@@ -145,7 +147,7 @@ caption{
     border-radius: 10px;
 
     span{
-        color: blue;
+        color: #332FD0;
     }
 }
 thead{
