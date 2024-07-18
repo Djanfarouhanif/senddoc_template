@@ -133,11 +133,15 @@ button{
     margin: 20px;
     display: flex;
     justify-content: center;
+    justify-items: center;
+    min-height: 400px;
+    
 
 }
 
 table{
     overflow: scroll;
+    display: none;
 }
 caption{
     margin: 20px;
@@ -195,3 +199,58 @@ td{
 }
 
 /*___________________________________________Fin Content________________________________________*/
+
+/*-------------------------------------Loader circular---------------------------*/
+
+.content .loader
+{
+    display: none;
+    position: relative;
+    width: 90px;
+    height: 90px;
+}
+
+.content .loader span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    transform: rotate(calc(18deg* var(--i)))
+
+}
+
+.content .loader span::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: linear-gradient(18deg, blue, red);
+    box-shadow: 0 0 10px blue,
+                0 0 10px blue,
+                0 0 10px blue,
+                0 0 10px blue,
+                0 0 10px blue,
+                0 0 10px blue;
+    animation: animate 1s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+
+        
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: scale(1);
+    }
+    80%, 100%
+    {
+        transform: scale(0);
+    }
+}
+/*________________________________________Fin Loader circular_____________________*/
