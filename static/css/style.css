@@ -36,7 +36,7 @@ body{
 .plaine{
     margin: 20px;
     display: grid;
-    grid-template-columns: auto 600px;
+    grid-template-columns: 390px auto;
     grid-column-end: auto;
     border-radius: 20px;
    
